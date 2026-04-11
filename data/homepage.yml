@@ -1,12 +1,12 @@
 head:
-  title: "Marjorie Kohn's Data Science Portfolio"
+  title: "Marjorie Kohn's Bioinformatics Portfolio"
 
 # showcase
 showcase:
   enable: true
-  title: "Hello, I’m Marjorie Kohn."
-  subtitle: "Data Scientist"
-  description: "Marjorie is a Bioinformatics graduate student at Virginia Commonwealth University."
+  title: "Hello, I'm Marjorie Kohn."
+  subtitle: "Bioinformatician & Data Scientist"
+  description: "Bioinformatics graduate student at Virginia Commonwealth University with a background in clinical laboratory science. Interests include computational genomics, clinical decision support systems, and laboratory data analytics."
   image:
     x: "img/showcase/data-science.gif"
     _2x: "img/showcase/data-science.gif"
@@ -16,8 +16,8 @@ showcase:
 
   button:
     icon: "icon-mail-fill"
-    btnText: "Contact Matt"
-    URL: "mailto:marjoriekohn@icloud.com"
+    btnText: "Contact Marjorie"
+    URL: "mailto:marjoriekohn01@gmail.com"
 
   socialLinks:
     - icon: "linkedin"
@@ -32,31 +32,31 @@ about:
   title: "Who am I?"
   content:
     <p class="lead">
-    <strong>I love helping data scientists.</strong> My passion is training. But, when I am not making new courses
-    or building software, I enjoy vacationing with my family and friends.
+    <strong>I am a bioinformatics graduate student</strong> at Virginia Commonwealth University with a background
+    in clinical laboratory science. I am passionate about applying computational analysis and data visualization
+    to biological research and diagnostic decision-making.
     </p>
     <p class="lead">
-    <strong>My area of focus</strong> is applying data science to business.
-    I create value for companies by understanding the financial
-    cost of problems and delivering a return-on-investment with my solutions.
-    I enjoy learning, working with stakeholders, and making better decisions with data.
+    <strong>My focus</strong> is computational genomics and clinical data analytics — from genome-wide association
+    studies and mitochondrial phylogenetics to building reproducible, automated analysis pipelines. I enjoy
+    translating complex biological questions into rigorous, well-documented code.
     </p>
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
     URL: "https://www.linkedin.com/in/marjoriekohn"
   image:
-    x: "img/who-am-i/user-picture-2.jpg"
-    _2x: "img/who-am-i/user-picture-2.jpg"
+    x: "img/who-am-i/mk-picture.jpg"
+    _2x: "img/who-am-i/mk-picture.jpg"
 
 # experience
 experience:
   enable: true
   title: "Experience"
-  description: "Description placeholder"
+  description: "From the clinical bench to the classroom to the command line — my career spans laboratory science, science education, and computational biology research."
   button:
     icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
+    btnText: "LinkedIn"
     URL: "https://www.linkedin.com/in/marjoriekohn"
   button2:
     icon: "icon-profile-fill"
@@ -65,12 +65,16 @@ experience:
 
   items:
     - title: "Graduate Teaching Assistant"
-      company: "Virginia Commonwealth University - College of Life Sciences"
-      duration: "Jan 2025 - present"
+      company: "Virginia Commonwealth University - School of Life Sciences (BNFO 201, BNFO 301)"
+      duration: "Aug 2025 - Present"
 
-    - title: "Teacher"
+    - title: "Biology Teacher"
       company: "Richmond Public Schools"
-      duration: "Jan 2020 - 2023"
+      duration: "Aug 2020 - Jan 2023"
+
+    - title: "Medical Technologist"
+      company: "Chippenham Hospital"
+      duration: "Aug 2020 - Dec 2020"
 
 # education
 education:
@@ -78,13 +82,12 @@ education:
   title: "Education"
   items:
     - university: "Virginia Commonwealth University"
-      year: "2024-present"
+      year: "2025 - 2027 (expected)"
       degree: "Master of Science in Bioinformatics"
 
     - university: "Virginia Commonwealth University"
-      year: "2017-2020"
-      degree: "Bachelor of Science in Medical Laboratory Sciences"
-
+      year: "2017 - 2020"
+      degree: "Bachelor of Science in Clinical Laboratory Sciences"
 
 # Client & Work
 client_and_work:
@@ -92,36 +95,44 @@ client_and_work:
   enable: true
 
   enable_clients: false
-  clients:
-    - logo:
-        x: "img/clients/asgardia.png"
-        _2x: "img/clients/asgardia@2x.png"
-      alt: "Asgardia"
 
   works:
-    - title: "Sales Demand Forecast Application"
-      description: "This application helps Marketing & Sales identify trends in product demand. The application is built in my Shiny Predictive Dashboards Course using Machine Learning."
+    - title: "Mitochondrial Genome Analysis of Crab Clades"
+      description: "An R Shiny application for comparative mitochondrial genomics of ghost crabs (Ocypode spp.) and fiddler crabs. Evaluates evolutionary divergence across 13 protein-coding genes using pairwise distance matrices, phylogenetic tree construction, dN/dS ratios, and Ti/Tv ratios."
       button:
         icon: "icon-arrow-right"
-        btnText: "Launch Application"
-        URL: "https://business-science.shinyapps.io/sales_dashboard_demand_forecast/"
+        btnText: "View on GitHub"
+        URL: "https://github.com/marjoriekohn"
       image:
-        x: "img/works/app_sales_demand_forecast.jpg"
-        _2x: "img/works/app_sales_demand_forecast.jpg"
+        x: "img/works/invertebrate_r.jpg"
+        _2x: "img/works/invertebrate_r.jpg"
+      is_even: true
+
+    - title: "PheWAS of SPTLC3"
+      description: "Designed and automated customizable Phenome-Wide Association Study analyses in Python using the All of Us Research Workbench. Implemented covariate generation and stratified cohort creation using Polars and PheTK, with reproducible workflows documented in Jupyter Notebook and Open Science Framework."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "View on OSF"
+        URL: "#"
+      image:
+        x: "img/works/phewas.jpg"
+        _2x: "img/works/phewas.jpg"
+      is_even: false
+
+    - title: "CDC Chronic Disease Indicators Analysis"
+      description: "Analyzed the CDC Chronic Disease Indicators dataset in R to identify correlations between socioeconomic factors and public health outcomes. Built a dplyr pipeline aggregating state-level mortality and uninsurance rates, with ggplot2 linear regression visualizations."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "View on GitHub"
+        URL: "https://github.com/marjoriekohn"
+      image:
+        x: "img/works/cdc_analysis.jpg"
+        _2x: "img/works/cdc_analysis.jpg"
       is_even: true
 
 # testimonial
 testimonial:
-  enable: true
-  title: "Testimonials"
-  items:
-
-    - name: "Justin Kurland, PhD"
-      position: "Lead Data Scientist, Northwestern Mutual"
-      content: "In less than 6 months after starting my first Business Science Course with Matt I had fully transitioned into a role as a lead data scientist and my life is better for it!"
-      image:
-        x: "img/testimonials/justin.jpg"
-        _2x: "img/testimonials/justin.jpg"
+  enable: false
 
 # contact
 contact:
@@ -129,8 +140,8 @@ contact:
   title: "Contact Marjorie"
 
   image:
-    x: "img/who-am-i/user-picture-2.jpg"
-    _2x: "img/who-am-i/user-picture-2.jpg"
+    x: "img/who-am-i/mk-picture.jpg"
+    _2x: "img/who-am-i/mk-picture.jpg"
 
   button:
     icon: "icon-mail-fill"
@@ -139,13 +150,13 @@ contact:
 
   phone:
     title: "Phone Number"
-    number: "--"
+    number: "(956) 245-6723"
   email:
     title: "Email"
-    email: '<a href="mailto:your-email@gmail.com">your-email@gmail.com</a>'
+    email: '<a href="mailto:marjoriekohn01@gmail.com">marjoriekohn01@gmail.com</a>'
   message:
     title: "Message"
-    message: "--"
+    message: "Feel free to reach out about research collaborations, teaching, or just to connect!"
 
 # newsletter
 newsletter:
